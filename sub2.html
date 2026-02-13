@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subtraction Program</title>
+</head>
+<body>
+
+    <h2>Subtract Two Numbers</h2>
+
+    <label>Enter First Number:</label>
+    <input type="number" id="num1"><br><br>
+
+    <label>Enter Second Number:</label>
+    <input type="number" id="num2"><br><br>
+
+    <button onclick="subtractNumbers()">Subtract</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function subtractNumbers() {
+            const number1 = parseFloat(document.getElementById("num1").value);
+            const number2 = parseFloat(document.getElementById("num2").value);
+
+            const subtraction = number1 - number2;
+
+            document.getElementById("result").innerHTML = "Result: " + subtraction;
+        }
+    </script>
+
+</body>
+</html>
